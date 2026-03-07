@@ -55,27 +55,7 @@ void setup() {
 }
 
 void loop() {
-    int button=analogRead(A0);
-    Serial.println(button);
-    
-    if(button==0){
-    lcd.clear();
-    lcd.print("Altitude:");
-    lcd.print(bmp.readAltitude(1013.25));
-    delay(3000);
-    lcd.clear();
-    }
-    else{
-    lcd.setCursor(0,0);
-    lcd.print("Temp:");
-    lcd.print(bmp.readTemperature());
-    lcd.write((byte)0);
-
-    lcd.setCursor(0,1);
-    lcd.print("Press:");
-    lcd.print(bmp.readPressure());
-    lcd.print("Pa");
-    
+     
     Serial.print("Temp:");
     Serial.print(bmp.readTemperature());
     Serial.println("C");
@@ -90,3 +70,4 @@ void loop() {
     delay(30);
     }
 }
+
