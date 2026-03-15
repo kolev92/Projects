@@ -32,17 +32,7 @@ void loop() {
       digitalWrite(greenPin, HIGH);
       digitalWrite(bluePin, HIGH);
       break;
-  
-  case 0xFF18E7:
-      digitalWrite(redPin, HIGH);
-      digitalWrite(greenPin, LOW);
-      digitalWrite(bluePin, HIGH);
-      break;
-
-  case 0xFF7A85:
-      digitalWrite(redPin, HIGH);
-      digitalWrite(greenPin, HIGH);
-      digitalWrite(bluePin, LOW);
-      break;
+    default:
+    break;
  } 
 }
